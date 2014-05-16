@@ -1,0 +1,30 @@
+name:           Hascoil
+version:        0.1
+cabal-version:  >= 1.2
+build-type:     Simple
+author:         Brandon
+
+executable Hascoil
+  hs-source-dirs:  src
+  main-is:         Main.hs
+  build-depends:   
+                   base >= 4,
+                   SDL,
+                   SDL-gfx,
+                   time,
+                   binary,
+                   random,
+                   sdl-renderable,
+                   directory,
+                   regex-compat,
+                   text
+  ghc-options:     -Wall
+  other-modules:   
+                   Snake,
+                   SnakeMap,
+                   Game
+  extra-libraries: SDL_gfx
+  extensions:      
+                   FlexibleInstances, 
+                   TypeSynonymInstances
+
